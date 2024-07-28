@@ -1,0 +1,38 @@
+.tableElement{
+    border-radius: 4px; /* Table border-radius */
+    overflow: hidden;
+    border-collapse:separate;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+.tableElement td:nth-child(4){
+    width: 40%;
+}
+
+.tableElement tr{
+    height: 20px;
+    height: 10px;
+}
+.tableElement td{
+    width: 50px;
+    height: 100%;
+    padding: 5px;
+    /* box-sizing: border-box; */
+}
+
+.statsDiv{
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 4px;
+    height: min-content;
+    background-color: white;
+}
+.statsDiv h4{
+    margin: 0px;
+}
+.statsDiv p{
+    font-size: 1.25rem;
+    margin: 10px;
+    text-align: start;
+}

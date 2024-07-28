@@ -1,0 +1,13 @@
+import cors from "cors";
+import dotenv from "dotenv";
+dotenv.config();
+import express from "express";
+import { transactionRouter } from "./src/routes/transaction.router.js";
+import { error404Handler } from "./utils/error404Handler.js";
+import { errorHandler } from "./utils/errorHandler.js";
+const app=express();
+app.use(cors());
+app.use("/api/transactions", transactionRouter); 
+app.use(error404Handler);
+app.use(errorHandler);
+export default app;
