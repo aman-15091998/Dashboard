@@ -8,12 +8,13 @@
 4) Create .env file and add the variables
 5) npm i 
 6) npm index.js
-7) Move to frontend folder
-8) Create a new terminal
-9) npm i 
-10) npm start
+8) Initialize db by calling http://localhost:5001/api/transactions/initialize on browser
+9) Move to frontend folder
+10) Create a new terminal
+11) npm i 
+12) npm start
 
 ## env config (for backend)
-PORT=5000
+PORT=5001
 MONGO_URL=mongodb://localhost:27017/DBname
 
