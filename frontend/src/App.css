@@ -20,9 +20,8 @@
 
 .App {
   text-align: center;
-  /* background-color: rgb(142, 233, 142); */
   background: rgb(255,255,255);
-background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(194,255,173,1) 48%, rgba(157,251,138,1) 100%);
+  background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(203,204,202,1) 48%, rgba(138,186,251,1) 100%);
 }
 .inputDiv{
   margin: 20px auto 10px auto;
