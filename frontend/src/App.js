@@ -56,7 +56,7 @@ function App() {
     <div className="App">
       <h1>Transaction Dashboard</h1>
       <div className="inputDiv">
-        <input className='searchInput' onChange={(e)=>{setSearch(e.target.value)}} value={search} type='text' placeholder='type to search'></input>
+        <input className='searchInput' onChange={(e)=>{setSearch(e.target.value)}} value={search} type='text' placeholder='Search transaction'></input>
         <div className="dropdown">
           <button className="btn btn-secondary dropdown-toggle dropdownBtn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
             Selected: {month}
@@ -82,10 +82,10 @@ function App() {
       </div>
       <div className='chartDiv'>
         <div className='pieDiv'>
-            <PieChart data={data?.pieData}/>
+            <PieChart data={data?.pieData} month={month}/>
         </div>
         <div className='barDiv'>
-          <BarChart data={data?.barData}/>
+          <BarChart data={data?.barData} month={month}/>
         </div>
       </div>
       

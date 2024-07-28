@@ -19,6 +19,9 @@ export const BarChart=({data, month})=>{
         ]
     }
     return (
-        <Bar data={d}/>
+        <>
+            <h4 className="text-center">Bar Chart - {month}</h4>
+            <Bar data={d}/>
+        </>
     )
 }

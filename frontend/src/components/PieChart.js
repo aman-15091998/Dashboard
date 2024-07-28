@@ -19,6 +19,10 @@ export const PieChart=({data, month})=>{
         ]
     }
     return (
-        <Pie data={d}/>
+        <>
+            <h4 className="text-center">Pie Chart - {month}</h4>
+            <Pie data={d}/>
+        </>
+        
     )
 }
