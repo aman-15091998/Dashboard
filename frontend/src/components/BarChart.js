@@ -18,10 +18,19 @@ export const BarChart=({data, month})=>{
             }
         ]
     }
+    const opt = {
+        scales: {
+          y: {
+            ticks: {
+              stepSize: 1, 
+            }
+          }
+        }
+      };
     return (
         <>
             <h4 className="text-center">Bar Chart - {month}</h4>
-            <Bar data={d}/>
+            <Bar data={d} options={opt}/>
         </>
     )
 }
